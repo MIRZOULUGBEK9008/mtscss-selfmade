@@ -1,0 +1,30 @@
+.button {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.55;
+  border-radius: 2.4rem;
+  border: 2px solid transparent;
+  padding: 0.9rem 3.3rem 1.1rem 3.2rem;
+  transition: 0.2s ease;
+}
+
+.light-btn {
+  color:$primary-whtie;
+  border-color: $primary-whtie;
+
+  &:hover {
+    background-color: $primary-whtie;
+    color:$secondary-dark-green;
+  }
+}
+
+
+.dark-btn {
+  color:$secondary-dark-green;
+  border-color: $secondary-dark-green;
+
+  &:hover {
+    background-color:$secondary-dark-green;
+    color:$primary-whtie;
+  }
+}
