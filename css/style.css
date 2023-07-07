@@ -485,6 +485,9 @@ body {
   font-weight: 600;
   white-space: nowrap;
 }
+.sitenav__link:hover {
+  color: #2C6269;
+}
 
 .site-header__button {
   margin-left: auto;

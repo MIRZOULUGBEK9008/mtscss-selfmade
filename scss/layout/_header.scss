@@ -57,6 +57,9 @@
     line-height: 1.5;
     font-weight: 600;
     white-space: nowrap;
+    &:hover {
+      color: $secondary-police-blue;
+    }
   }
 }
 
