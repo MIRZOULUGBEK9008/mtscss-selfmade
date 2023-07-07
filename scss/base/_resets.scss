@@ -5,8 +5,8 @@
 }
 
 *:focus {
-  // outline: ;
-  // outline-offset: ;
+  outline: 0.1rem dashed $primary-white;
+  outline-offset: 0.3rem;
 }
 
 html {

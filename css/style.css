@@ -314,6 +314,11 @@ template {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 0.1rem dashed #FFFFFF;
+  outline-offset: 0.3rem;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -348,11 +353,11 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 @font-face {
@@ -397,6 +402,204 @@ body {
   color: #FFFFFF;
 }
 
+.button {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.55;
+  border-radius: 2.4rem;
+  border: 2px solid transparent;
+  padding: 0.9rem 3.3rem 1.1rem 3.2rem;
+  transition: color 0.2s ease;
+}
+
+.button--light {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.button--light:hover {
+  background-color: #FFFFFF;
+  color: #002529;
+}
+
+.button--dark {
+  color: #002529;
+  border-color: #002529;
+}
+.button--dark:hover {
+  background-color: #002529;
+  color: #FFFFFF;
+}
+
+.site-header-hero-wrapper {
+  background-image: url(../../img/home/hero-circle-double.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -100px right calc(50% - 42rem);
+  min-height: 70rem;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  padding-top: 7.3rem;
+  padding-bottom: 7.3rem;
+}
+
+.site-header__logo {
+  margin-right: 8rem;
+}
+
+.logo {
+  transition: opacity 0.3s ease;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
+}
+.logo .logo__img {
+  width: 160px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* SITENAV-LIST  */
+.sitenav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 4rem;
+}
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.site-header__button {
+  margin-left: auto;
+}
+
+.toggler {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+}
+
+.index-hero__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 6.6rem;
+}
+
+.index-hero__title {
+  font-size: 10rem;
+  line-height: 1;
+}
+.index-hero__title i {
+  font-style: normal;
+  color: #F67E7E;
+}
+
+.index-hero-description__wrapper {
+  width: 100%;
+  max-width: 44.5rem;
+}
+
+.index-hero__description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.divider::before {
+  display: flex;
+  flex-direction: column;
+  content: "";
+  width: 5rem;
+  height: 0.4rem;
+  margin-bottom: 8rem;
+}
+
+.divider--rapture-blue::before {
+  background-color: #79C8C7;
+}
+
+@media only screen and (max-width: 1050px) {
+  .site-header-hero-wrapper {
+    background-position: bottom -100px right 50%;
+  }
+  .logo__img {
+    width: 128px !important;
+    height: 32px !important;
+  }
+  .site-header__logo {
+    margin-right: 4.8rem;
+  }
+  .index-hero__content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .index-hero__title {
+    font-size: 6.4rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+  .index-hero-description__wrapper {
+    max-width: 45.7rem;
+    text-align: center;
+  }
+  .index-hero__description {
+    font-size: 1.5rem;
+  }
+  .divider::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .site-header-hero-wrapper {
+    min-height: 56.7rem;
+  }
+  .site-header__container {
+    justify-content: space-between;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+  }
+  .site-header__button {
+    display: none;
+  }
+  .site-header__sitenav {
+    display: none;
+  }
+  .toggler {
+    display: inline-flex;
+  }
+  .index-hero__content {
+    padding-top: 3.2rem;
+  }
+  .index-hero__title {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1.8rem;
+  }
+}
 main {
   flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */

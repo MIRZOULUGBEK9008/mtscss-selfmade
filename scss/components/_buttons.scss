@@ -5,26 +5,25 @@
   border-radius: 2.4rem;
   border: 2px solid transparent;
   padding: 0.9rem 3.3rem 1.1rem 3.2rem;
-  transition: 0.2s ease;
+  transition: color 0.2s ease;
 }
 
-.light-btn {
-  color:$primary-whtie;
-  border-color: $primary-whtie;
+.button--light {
+  color:$primary-white;
+  border-color: $primary-white;
 
   &:hover {
-    background-color: $primary-whtie;
+    background-color: $primary-white;
     color:$secondary-dark-green;
   }
 }
 
-
-.dark-btn {
+.button--dark {
   color:$secondary-dark-green;
   border-color: $secondary-dark-green;
 
   &:hover {
     background-color:$secondary-dark-green;
-    color:$primary-whtie;
+    color:$primary-white;
   }
 }
